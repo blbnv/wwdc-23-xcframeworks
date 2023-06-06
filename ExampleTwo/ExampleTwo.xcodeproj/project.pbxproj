@@ -13,6 +13,7 @@
 		1BE2A53D2A2FA1C300F43774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE2A53B2A2FA1C300F43774 /* Main.storyboard */; };
 		1BE2A53F2A2FA1C400F43774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BE2A53E2A2FA1C400F43774 /* Assets.xcassets */; };
 		1BE2A5422A2FA1C400F43774 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE2A5402A2FA1C400F43774 /* LaunchScreen.storyboard */; };
+		1BF136892A2FA41A0043E96B /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 1BF136882A2FA41A0043E96B /* Modules */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1BE2A53E2A2FA1C400F43774 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BE2A5412A2FA1C400F43774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BE2A5432A2FA1C400F43774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BE2A5492A2FA25700F43774 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Modules; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BF136892A2FA41A0043E96B /* Modules in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +43,10 @@
 		1BE2A5292A2FA1C300F43774 = {
 			isa = PBXGroup;
 			children = (
+				1BE2A5492A2FA25700F43774 /* Modules */,
 				1BE2A5342A2FA1C300F43774 /* ExampleTwo */,
 				1BE2A5332A2FA1C300F43774 /* Products */,
+				1BF136872A2FA41A0043E96B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +72,13 @@
 			path = ExampleTwo;
 			sourceTree = "<group>";
 		};
+		1BF136872A2FA41A0043E96B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +95,9 @@
 			dependencies = (
 			);
 			name = ExampleTwo;
+			packageProductDependencies = (
+				1BF136882A2FA41A0043E96B /* Modules */,
+			);
 			productName = ExampleTwo;
 			productReference = 1BE2A5322A2FA1C300F43774 /* ExampleTwo.app */;
 			productType = "com.apple.product-type.application";
@@ -356,6 +371,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1BF136882A2FA41A0043E96B /* Modules */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Modules;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1BE2A52A2A2FA1C300F43774 /* Project object */;
 }
