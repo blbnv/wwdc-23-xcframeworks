@@ -1,4 +1,3 @@
-
 import Segment
 
 public struct Modules {
